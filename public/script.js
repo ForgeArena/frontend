@@ -1,17 +1,23 @@
-import { getUsers } from "./api.js";
-
 document.addEventListener("DOMContentLoaded", async () => {
-    const usersList = document.getElementById("usersList"); // Make sure you have <div id="usersList"></div> in index.html
+    const userList = document.getElementById("user-list"); // Make sure this matches the HTML
 
     try {
-        const users = await getUsers();
-        usersList.innerHTML = users.map(user => `
-            <div>
-                <p>👤 <strong>${user.username}</strong></p>
-                <p>🆔 Telegram ID: ${user.telegramId}</p>
-            </div>
-        `).join("");
+        const response = await fetch("https://backend-farn.onrender.com/api/users"); // ✅ Replace with actual backend URL
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const users = await response.json();
+        if (users.length === 0) {
+            userList.innerHTML = "<li>No users found.</li>";
+        } else {
+            userList.innerHTML = users.map(user => `
+                <li>
+                    <strong>👤 ${user.username}</strong> <br>
+                    🆔 Telegram ID: ${user.telegramId}
+                </li>
+            `).join("");
+        }
     } catch (error) {
-        usersList.innerHTML = `<p>❌ Failed to load users.</p>`;
+        console.error("❌ Error fetching users:", error);
+        userList.innerHTML = "<li>❌ Failed to load users.</li>";
     }
 });
