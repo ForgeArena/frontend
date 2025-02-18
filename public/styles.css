@@ -9,6 +9,7 @@ body {
 }
 
 .background {
+    display: flex;
     margin: 0 auto;
 }
 
@@ -17,6 +18,11 @@ body {
 }
 
 .background-desktop {}
+
+.content {
+    position: absolute;
+    z-index: 2;
+}
 
 /* Background for mobile screens */
 @media (max-width: 768px) {
