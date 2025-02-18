@@ -1,0 +1,14 @@
+/* Default background for desktop */
+body {
+    background-image: url('./images/world-desktop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background for mobile screens */
+@media (max-width: 768px) {
+    body {
+        background-image: url('./images/world-mobile.png');
+    }
+}

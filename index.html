@@ -10,11 +10,18 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#ffffff">
     <meta name="telegram-enable-webview" content="true">
+    <link rel="stylesheet" href="public/styles.css">
 
     <script defer src="script.js"></script> <!-- ✅ Correctly linked JavaScript -->
 </head>
 <body>
     <h1>Registered Users</h1>
     <ul id="user-list"></ul> <!-- Users will be displayed here -->
+
+    <script>
+        if (window.Telegram.WebApp) {
+            Telegram.WebApp.expand(); // Expands WebView to full screen
+        }
+    </script>
 </body>
 </html>
