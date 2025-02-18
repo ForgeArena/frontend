@@ -4,8 +4,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* background-image: url('./images/world-desktop.png');
-    background-repeat: no-repeat; */
 }
 
 .container {
@@ -14,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #152a05;
+    overflow-x: hidden;
 }
 
 .background {
@@ -44,7 +43,7 @@ body {
 
 .left-tree {
     position: absolute;
-    left: -356px;
+    left: -31.5%;
     height: 100%;
     transform: rotate(-58deg);
     border-top-left-radius: 100%;
@@ -54,7 +53,7 @@ body {
 .right-tree {
     position: absolute;
     height: 100%;
-    right: -356px;
+    right: -31.5%;
     transform: rotate(-122deg) scaley(-1);
     border-top-left-radius: 100%;
     border-bottom-right-radius: 100%;
