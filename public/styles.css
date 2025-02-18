@@ -10,5 +10,6 @@ body {
 @media (max-width: 768px) {
     body {
         background-image: url('./images/world-mobile.png');
+        background-size: cover;
     }
 }
