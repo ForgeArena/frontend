@@ -4,14 +4,31 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('./images/world-desktop.png');
-    background-repeat: no-repeat;
+    /* background-image: url('./images/world-desktop.png');
+    background-repeat: no-repeat; */
 }
+
+.background {
+    margin: 0 auto;
+}
+
+.background-mobile {
+    display: none;
+}
+
+.background-desktop {}
 
 /* Background for mobile screens */
 @media (max-width: 768px) {
-    body {
+    /* body {
         background-image: url('./images/world-mobile.png');
         background-size: cover;
+    } */
+    .background-desktop {
+        display: none;
+    }
+
+    .background-mobile {
+        display: inline-block;
     }
 }
