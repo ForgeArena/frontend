@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="telegram-enable-webview" content="true">
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="script.js"></script> <!-- ✅ Correctly linked JavaScript -->
+</head>
+<body>
+    <h1>Registered Users</h1>
+    <ul id="user-list"></ul> <!-- Users will be displayed here -->
+
+    <script>
+        if (window.Telegram.WebApp) {
+            Telegram.WebApp.expand(); // Expands WebView to full screen
+        }
+    </script>
+</body>
+</html>
