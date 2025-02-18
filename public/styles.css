@@ -62,23 +62,28 @@ body {
 
 .nav {
     width: 75%;
-    position: absolute;
+    position: relative;
+    margin-top: 25px;
     top: 10px;
     background-color: #dae19c;
-    height: 45px;
     z-index: 2;
     opacity: 0.8;
     border-radius: 10px 40px 10px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    padding: 0 20px;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #dae19c;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav ul {
