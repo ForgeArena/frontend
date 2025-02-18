@@ -112,6 +112,10 @@ body {
         height: 100vh;
     }
 
+    .nav {
+        position: fixed;
+    }
+
     .left-tree,
     .right-tree {
         display: none;
