@@ -13,6 +13,7 @@ body {
     justify-content: center;
     background-color: #152a05;
     overflow-x: hidden;
+    flex-direction: column;
 }
 
 .background {
@@ -57,6 +58,38 @@ body {
     transform: rotate(-122deg) scaley(-1);
     border-top-left-radius: 100%;
     border-bottom-right-radius: 100%;
+}
+
+.nav {
+    width: 75%;
+    position: absolute;
+    top: 10px;
+    background-color: #dae19c;
+    height: 45px;
+    z-index: 2;
+    opacity: 0.8;
+    border-radius: 10px 40px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dae19c;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav ul li {
+    text-decoration: none;
+    color: black;
 }
 
 
