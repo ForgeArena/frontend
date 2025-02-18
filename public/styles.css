@@ -47,6 +47,8 @@ body {
     left: -356px;
     height: 100%;
     transform: rotate(-58deg);
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 
 .right-tree {
@@ -54,6 +56,8 @@ body {
     height: 100%;
     right: -356px;
     transform: rotate(-122deg) scaley(-1);
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 
 
