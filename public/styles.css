@@ -27,7 +27,7 @@ body {
 
 .background-desktop {
     height: 100vh;
-    box-shadow: 0px 0px 200px 0px rgb(84 135 47);
+    box-shadow: 0px 0px 300px 0px rgb(237 212 121);
 }
 
 .content {
@@ -44,12 +44,16 @@ body {
 
 .left-tree {
     position: absolute;
-    left: 0
+    left: -356px;
+    height: 100%;
+    transform: rotate(-58deg);
 }
 
 .right-tree {
     position: absolute;
-    right: 0;
+    height: 100%;
+    right: -356px;
+    transform: rotate(-122deg) scaley(-1);
 }
 
 
